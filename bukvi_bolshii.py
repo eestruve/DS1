@@ -1,0 +1,12 @@
+print('введите текст')
+tekst = str(input())
+tekst = tekst.split()
+print(tekst)
+dlina = len(tekst)
+print(dlina)
+for i in range(dlina):
+    tekst[i]=list(tekst[i])
+    print(tekst[i])
+    tekst[i][0]=tekst[i][0].upper()
+    tekst[i]=''.join(tekst[i])
+print(" ".join(tekst))
